@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+* {
+    padding: 0;
+	margin: 0;
+    border: 0;
+}
+
+.appContainer {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        ". title ."
+        ". stocks ."
+    ;
+}
+
+.titleContainer {
+    grid-area: title;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 80px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.githubContainer {
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+/* 
+GitHub icon obtained from fontawesome.com with a public license (https://fontawesome.com/license) 
+*/
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.stocksContainer {
+    grid-area: stocks;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-template-areas: "stockTable stockGraph";
+}
+
+.tableContainer {
+    grid-area: stockTable;
+}
+
+.graphContainer {
+    grid-area: stockGraph;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background: linear-gradient(35deg, rgb(53, 39, 177), rgb(255, 39, 219));
+}
+
+@supports ((clip-path: polygon(0 0, 75% 0, 51% 4%, 41% 10%, 28% 14%, 15% 13%, 0 31%)) or (-webkit-clip-path: polygon(0 0, 75% 0, 51% 4%, 41% 10%, 28% 14%, 15% 13%, 0 31%))) {
+    .bg {
+        background: radial-gradient(closest-side at 25% 25%, rgb(53, 39, 177), rgb(255, 39, 219));
+        -webkit-clip-path: polygon(0 0, 75% 0, 51% 4%, 41% 10%, 28% 14%, 15% 13%, 0 31%);
+        clip-path: polygon(0 0, 75% 0, 51% 4%, 41% 10%, 28% 14%, 15% 13%, 0 31%);
+    } 
+}
+
+@supports not ((clip-path: polygon(0 0, 75% 0, 51% 4%, 41% 10%, 28% 14%, 15% 13%, 0 31%)) or (-webkit-clip-path: polygon(0 0, 75% 0, 51% 4%, 41% 10%, 28% 14%, 15% 13%, 0 31%))) {
+    .titleContainer {
+        color: rgb(245, 245, 245);
+    }
+}

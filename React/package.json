@@ -1,0 +1,45 @@
+{
+  "name": "stocks-spa",
+  "version": "1.0.0",
+  "description": "SPA to display live stock data",
+  "homepage": "https://virajshastri97.github.io/stocks-spa/",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "webpack --mode production",
+    "deploy": "gh-pages -d dist",
+    "start": "webpack-dev-server --mode development --hot"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Viraj Shastri",
+  "license": "ISC",
+  "dependencies": {
+    "immutability-helper": "^2.8.1",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "recharts": "^1.4.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "gh-pages": "^2.0.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

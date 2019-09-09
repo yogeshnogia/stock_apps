@@ -1,27 +1,13 @@
 # MediaStockApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+A Single Page App for displaying live stock data. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A test project created showcasing my experience with Angular. The app uses WebSocket to fetch (dummy) data and create a live table showing the current price, the change and the time when it was updated. The WebSocket used is: ws://stocks.mnet.website.
 
-## Code scaffolding
+## Problem
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The actual problem statement for this challenge can be found here: https://media-net.github.io/recruitment-frontend-engineer/.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

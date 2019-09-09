@@ -1,0 +1,6 @@
+{"*": {
+    "target": "ws://stocks.mnet.website",
+    "secure": false,
+    "ws": true
+  }
+}
